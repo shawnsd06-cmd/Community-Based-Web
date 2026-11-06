@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <!-- NAVIGATION -->
+
     <header class="header">
       <nav class="navbar">
         <a href="#home" class="logo"> Townly<span>.</span> </a>
@@ -38,19 +38,31 @@
             aria-label="Switch to dark mode"
             aria-pressed="false"
           >
+            <svg
+              class="theme-icon sun-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2 M12 20v2 M4.93 4.93l1.42 1.42
+                 M17.65 17.65l1.42 1.42 M2 12h2 M20 12h2
+                 M4.93 19.07l1.42-1.42 M17.65 6.35l1.42-1.42"
+              />
+            </svg>
+
+            <svg
+              class="theme-icon moon-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                 8.5 8.5 0 1 0 20.5 15.5Z"
+              />
+            </svg>
+
             <span class="switch-thumb"></span>
-          </button>
-
-          <a href="#login" class="login-btn">Login</a>
-
-          <button
-            class="menu-toggle"
-            id="menuToggle"
-            type="button"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-          >
-            ☰
           </button>
         </div>
       </nav>
@@ -81,7 +93,6 @@
         </div>
       </section>
 
-      <!-- DOCUMENT SERVICES -->
       <section class="services section" id="services">
         <div class="section-heading">
           <span class="tagline">OUR SERVICES</span>
@@ -93,7 +104,12 @@
 
         <div class="service-grid">
           <div class="service-card">
-            <div class="service-icon">📄</div>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h7l5 5v13H7z" />
+                <path d="M14 3v5h5 M10 13h6 M10 17h6" />
+              </svg>
+            </div>
 
             <h3>Barangay Clearance</h3>
 
@@ -141,7 +157,6 @@
         </div>
       </section>
 
-      <!-- HOW IT WORKS -->
       <section class="how-it-works section" id="how-it-works">
         <div class="section-heading">
           <span class="tagline">SIMPLE PROCESS</span>
@@ -186,7 +201,6 @@
         </div>
       </section>
 
-      <!-- ABOUT -->
       <section class="about section" id="about">
         <div class="about-content">
           <span class="tagline">ABOUT TOWNLY</span>
@@ -202,7 +216,6 @@
         </div>
       </section>
 
-      <!-- LOGIN PLACEHOLDER -->
       <section class="section login-placeholder" id="login">
         <div class="section-heading">
           <span class="tagline">GET STARTED</span>
@@ -212,7 +225,6 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
       <a href="#home" class="logo"> Townly<span>.</span> </a>
 
@@ -221,7 +233,6 @@
       <p class="copyright">© 2026 Townly. All rights reserved.</p>
     </footer>
 
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
   </body>
 </html>
