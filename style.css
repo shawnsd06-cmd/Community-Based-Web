@@ -1,4 +1,5 @@
 
+/* THEME VARIABLES */
 :root {
     --bg-color: #F4F9FF;
     --surface-color: #FFFFFF;
@@ -33,6 +34,7 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -56,6 +58,7 @@ a {
     padding: 90px 8%;
 }
 
+/* NAVIGATION */
 header {
     background: var(--header-bg);
     position: sticky;
@@ -101,6 +104,7 @@ header {
     transition: color 0.3s;
 }
 
+/* UNDERLINE ANIMATION */
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -160,6 +164,7 @@ header {
     cursor: pointer;
 }
 
+/* HERO */
 .hero {
     min-height: 560px;
     padding: 100px 8%;
@@ -227,6 +232,7 @@ header {
     color: var(--primary-color);
 }
 
+/* SECTION HEADINGS */
 .section-heading {
     text-align: center;
     margin-bottom: 45px;
@@ -243,6 +249,7 @@ header {
     font-size: 14px;
 }
 
+/* SERVICES */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -303,6 +310,7 @@ header {
     color: var(--primary-color);
 }
 
+/* HOW IT WORKS */
 .how-it-works {
     background: var(--section-bg);
     transition: background 0.3s;
@@ -338,7 +346,7 @@ header {
     line-height: 1.7;
 }
 
-
+/* ABOUT */
 .about {
     background: var(--about-bg);
     color: var(--about-text);
@@ -360,6 +368,7 @@ header {
     font-size: 14px;
 }
 
+/* FOOTER */
 footer {
     padding: 45px 8%;
     text-align: center;
@@ -439,6 +448,7 @@ footer .copyright {
     }
 }
 
+/* REDUCED MOTION */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -448,6 +458,7 @@ footer .copyright {
     }
 }
 
+/* MINIMAL HEADER */
 .navbar {
     height: 56px;
     padding: 0 24px;
@@ -466,12 +477,14 @@ footer .copyright {
     font-size: 13px;
 }
 
+/* SMALLER LOGIN BUTTON */
 .login-btn {
     padding: 7px 15px;
     font-size: 12px;
     border-radius: 6px;
 }
 
+/* SLIDE THEME SWITCH */
 .theme-toggle {
     position: relative;
     width: 42px;
@@ -496,6 +509,7 @@ footer .copyright {
     transition: transform 0.3s ease;
 }
 
+/* DARK MODE SWITCH */
 [data-theme="dark"] .theme-toggle {
     background: #5795D6;
 }
@@ -504,6 +518,7 @@ footer .copyright {
     transform: translateX(19px);
 }
 
+/* HEADER TRANSITION */
 .header,
 .navbar,
 .nav-links,
@@ -512,7 +527,7 @@ footer .copyright {
                 border-color 0.3s ease;
 }
 
-
+/* MOBILE HEADER */
 @media (max-width: 768px) {
     .navbar {
         height: 54px;
@@ -524,6 +539,11 @@ footer .copyright {
     }
 }
 
+/* =================================
+   TOWNLY - COMPACT MINIMAL DESIGN
+================================= */
+
+/* GENERAL */
 body {
     font-size: 14px;
 }
@@ -532,6 +552,7 @@ body {
     padding: 65px 8%;
 }
 
+/* HEADER */
 .navbar {
     height: 54px;
     max-width: 1200px;
@@ -563,6 +584,7 @@ body {
     transform: scale(0.9);
 }
 
+/* HERO */
 .hero {
     min-height: 440px;
     padding: 75px 8%;
@@ -601,6 +623,7 @@ body {
     border-radius: 6px;
 }
 
+/* SECTION HEADINGS */
 .section-heading {
     margin-bottom: 32px;
 }
@@ -614,6 +637,7 @@ body {
     font-size: 12px;
 }
 
+/* SERVICES */
 .service-grid {
     gap: 15px;
 }
@@ -643,6 +667,7 @@ body {
     font-size: 11px;
 }
 
+/* HOW IT WORKS */
 .steps-grid {
     gap: 16px;
 }
@@ -666,6 +691,7 @@ body {
     line-height: 1.6;
 }
 
+/* ABOUT */
 .about h2 {
     font-size: 29px;
     margin: 14px 0;
@@ -675,12 +701,14 @@ body {
     font-size: 13px;
     line-height: 1.7;
 }
- 
+
+/* LOGIN SECTION */
 .login-placeholder {
     padding-top: 55px;
     padding-bottom: 55px;
 }
 
+/* FOOTER */
 footer {
     padding: 30px 8%;
 }
@@ -695,6 +723,7 @@ footer .copyright {
     margin-top: 18px;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
     .navbar {
         height: 52px;
@@ -727,6 +756,9 @@ footer .copyright {
     }
 }
 
+/* REFINED HEADER BUTTONS */
+
+/* LOGIN BUTTON */
 .login-btn {
     padding: 6px 13px;
     font-size: 11px;
@@ -742,6 +774,7 @@ footer .copyright {
     transform: translateY(-1px);
 }
 
+/* LIGHT / DARK SWITCH */
 .theme-toggle {
     width: 36px;
     height: 20px;
@@ -768,6 +801,7 @@ footer .copyright {
     transition: transform 0.3s ease;
 }
 
+/* DARK MODE */
 [data-theme="dark"] .theme-toggle {
     background: var(--primary-color);
     border-color: var(--primary-color);
@@ -777,6 +811,7 @@ footer .copyright {
     transform: translateX(16px);
 }
 
+/* BUTTON ALIGNMENT */
 .nav-actions {
     gap: 10px;
     align-items: center;
@@ -787,6 +822,7 @@ footer .copyright {
     flex-shrink: 0;
 }
 
+/* THEME SWITCH WITH ICONS */
 .theme-toggle {
     width: 42px;
     height: 23px;
@@ -838,8 +874,45 @@ footer .copyright {
     stroke: #DCEBFA;
 }
 
+/* BUTTON FOCUS */
 .theme-toggle:focus-visible,
 .login-btn:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 3px;
+}
+
+/* CONSISTENT OUTLINE ICONS */
+.service-icon,
+.step-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.service-icon svg,
+.step-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* STEP ICON BACKGROUND */
+.step-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background: var(--section-bg);
+}
+
+/* REMOVE OLD NUMBER STYLE */
+.step-card > span {
+    display: none;
 }
